@@ -4,6 +4,7 @@ BLACK='\u001b[40m'
 END='\u001b[0m'
 GREEN='\u001b[42m'
 RED='\u001b[41m'
+
 for i in range(6):
     if i<2:
         print(f'{WHITE}{" " * 5}{BLUE}{" " * 5}{WHITE}{" " * 10}{END}')
@@ -11,7 +12,8 @@ for i in range(6):
         print(f'{BLUE}{" " *20}{END}')
     else:
         print(f'{WHITE}{" " * 5}{BLUE}{" " * 5}{WHITE}{" " * 10}{END}')
-print()       
+print()  
+
 for i in range (3):
     print(
         "\x1b[47;1m  " * 5,
@@ -104,6 +106,7 @@ for i in range (3):
         "\x1b[47;1m  " * 4,
         "\x1b[m",)
 print()
+
 print('y')
 for x in range(10,-2,-1):
     if 0 < x <= 10:
@@ -113,6 +116,7 @@ for x in range(10,-2,-1):
     else:
         print(f'{"     "}{"1 2 3 4 5 6 7 8 9 10  x "}')
 print()
+
 file = open('sequence.txt', 'r')
 list1 = []
 list2 = []
